@@ -42,7 +42,7 @@ permissions:
 jobs:
   define_matrix:
     name: Define Build Matrix
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     defaults:
